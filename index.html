@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <title>John M Mitre</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-    <!-- a main container to make sweeping changes without affecting "body" -->
-    <div id="main-container">
-        <!-- branding section -->
-        <header>
-            <div id="logo">
-                <h1><strong>John M. Mitre</strong></h1>
-                <hr />
-                <br />
-                <h4>Could be better... but definitely not any worse</h4>
-                <img src="img/walter_smiley.jfif" alt="https://via.placeholder.com/300" id="main-img">
-            </div>
-        </header>
-
-        <!-- the main content -->
-        <main>
-            <div id="main-content">
-                <article>
-                    <!-- the intro section -->
-                    <section id="intro" style="padding-bottom:2rem">
-                        <h2><strong>Who?</strong></h2>
-                        <p>Hi there!  I'm John Michael Mitre, an aspiring software engineer located just outside New York, New York.</p>
-                    </section>
-                    <!-- the about me section -->
-                    <section id="about-me">
-                        <h2><strong>About Me</strong></h2>
-                        <p>Current student of computer science, but long time fan of computers in general. 
-                            No notable works to my name outside of small convinience projects like a bot for a videogame
-                            or a timed video player for an obscure japanese show for now, but check back again in the future
-                            for some (hopefully) nice to look at web apps and programs.  
-                        </p>
-                        <p>
-                            I have a serious interest in the future of tech, both for commercial and personal use.  
-                            As I am currently a nurse, the future of tech in medicine is a particular interest although 
-                            electric and self driving vehicles are a very close second... they may flip around depending on the day.  
-                        </p>
-                        <br />
-                        <p>
-                            <!-- currently studied techs for web dev -->
-                            <!-- didn't put it in a separate div since I think it's relevant to 
-                            the "about me" section -->
-                            <h3>Currently Used Technologies</h3>
-                            <ol>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                            </ol>
-                        </p>
-                    </section>
+    <div id="layer">
+        <div id="layout-container">
+            <header>
+                <div>John M Mitre</div>
+            </header>
+            <main id="main-content">
+                <article id="about-me">
+                    <div id="blurb">
+                        <h1>Web developer extraordinaire</h1>
+                        <h3>... in training</h3>
+                        <p>Hi! I'm John Michael Mitre, an aspiring software engineer and web developer located in New York. </p>
+                    </div>
                 </article>
-            </div>
-        </main>
-
-        <!-- the footer section -->
-        <!-- uses an unordered list horizontally to create a footer nav -->
-        <footer>
-            <nav id="page-footer">
-                <ul>
-                    <li><a href="https://github.com/JenerikMind" target="none">Github</a></li>
-                    <li><a href="https://github.com/JenerikMind" target="none">LinkedIn (placeholder)</a></li>
-                    <li><a href="mailto:testuser@test.com">Email Me!</a></li>
-                </ul>
-            </nav>
-        </footer>
+                <article id="picture-tagline">
+                    <div>
+                        <img src="img/walter_smiley.jfif" height="300px">
+                        <caption>
+                            <hr>
+                            <h3>Could be better... but definitely not any worse.</h3>
+                        </caption>
+                    </div>
+                </article>
+                <article id="more-info">
+                    <div id="my-story">
+                        <h2>A little bit about me</h2>
+                        <p>During the day, I work full time as a nurse. At night, I'm an aspiring software engineer and developer. Thanks to Thinkful, I am currently focusing on internet technologies such as HTML, CSS and Javascript. Being able to bring
+                            ideas to life that don't require a command line, or a separate package for GUIs has been a fun (and at times, frustrating) experience. While I admit to not being the greatest designer for the front end portion of full stack
+                            development, it provides an interesting challenge. It's also rewarding to be able to strengthen a weakness of mine.
+                        </p>
+                        <div id="skills">
+                            <div id="intro">
+                                Because of my background in healthcare, I enjoy working with others and bring plenty of transferrable skills and strengths.
+                            </div>
+                            <div>
+                                <ol>
+                                    <h3>Skills</h3>
+                                    <li>Speaking effectively</li>
+                                    <li>Adapting to changes</li>
+                                    <li>Time management</li>
+                                    <li>Critical Thinking</li>
+                                    <li>Self and team motivation</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <ul>
+                                    <h3>Strenghts</h3>
+                                    <li>Hard worker</li>
+                                    <li>Personable</li>
+                                    <li>Steady under pressure</li>
+                                    <li>Creative problem solver</li>
+                                    <li>Collaborator</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <footer id="bottom-bar">
+                Contact me: <span class="links"><a href="">LinkedIn</a></span> <span class="links"><a href="">GitHub</a></span>
+            </footer>
+        </div>
     </div>
 </body>
+
 </html>

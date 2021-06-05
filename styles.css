@@ -1,62 +1,128 @@
 /* set a white background for the main page */
-html{
-    background-color: white;
+
+html {
+    background-color: skyblue;
 }
 
-/* layer they rest of the page "on top" */
-body{
-    width: 97vw;
-    margin: auto;
-    font-size: 1.3em;
-    font-family: sans-serif;
-    background-color: deepskyblue;
-}
-
-/* flex container to align things */
-#main-container{
+body {
     display: flex;
-    flex-direction: column;
-    align-self: stretch;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
 }
-#logo{
-    text-align: center;
+
+header {
+    display: flex;
+    width: 90vw;
+    font-size: 2em;
 }
-#logo h1{
-    padding-top: 1rem;
-}
-#main-img{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-main{
-    padding-top: 5rem;
-    text-align: center;
-}
-#main-content{
-    width: 45%;
-    margin: auto;
-}
-footer{
-    padding-top: 10rem;
-    text-align: center;
-}
-footer ul{
-    border: 2px solid white;
-}
-footer li{
-    list-style: none;
-    display: inline;
-    padding-right: 3rem;
-}
-a, h1, h2, h3{
+
+header div {
+    margin-left: 1rem;
     color: white;
 }
-hr{
-    border-color: white;
+
+main {
+    display: grid;
+    grid-template-areas: 'about-me picture-tagline' 'more-info more-info';
+    grid-template-columns: repeat(2, 1fr);
 }
-#logo img{
-    box-shadow: inset;
-    border-radius: 8px;
+
+h1,
+h3 {
+    margin: 0;
+}
+
+ol h3 {
+    text-align: center;
+    margin-right: 3rem;
+}
+
+
+/* translucent layer "on top" */
+
+#layer {
+    background-color: rgba(248, 247, 216, 0.2);
+    position: absolute;
+    width: 95vw;
+    height: 100vh;
+}
+
+#layout-container {
+    display: grid;
+    grid-template-rows: 1fr 18fr 1fr;
+    grid-template-columns: auto;
+    height: 100%;
+}
+
+#navbar {
+    width: 90vw;
+    font-size: 2em;
+}
+
+#picture-tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#picture-tagline img {
+    margin-left: 5rem;
+}
+
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blurb {
+    width: clamp(400px, 30vw, 600px);
+}
+
+#blurb h1 {
+    text-align: center;
+}
+
+#blurb h3 {
+    text-align: right;
+}
+
+#more-info {
+    grid-area: more-info;
+    display: flex;
+    justify-content: center;
+}
+
+#more-info h2 {
+    text-align: center;
+}
+
+#my-story {
+    width: 90%;
+    text-align: justify;
+}
+
+#skills {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-areas: "intro intro" "skills strengths";
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+#intro {
+    grid-area: intro;
+    text-align: center;
+}
+
+#bottom-bar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.links {
+    margin-left: 2rem;
+    font-weight: bold;
 }
