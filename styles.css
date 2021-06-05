@@ -1,4 +1,4 @@
-/* set a white background for the main page */
+/* set a blue background to the page */
 
 html {
     background-color: skyblue;
@@ -28,10 +28,16 @@ main {
     grid-template-columns: repeat(2, 1fr);
 }
 
+
+/* bring the elements closer together for the blurb */
+
 h1,
 h3 {
     margin: 0;
 }
+
+
+/* to align the h3 text a bit closer to the list */
 
 ol h3 {
     text-align: center;
@@ -39,7 +45,7 @@ ol h3 {
 }
 
 
-/* translucent layer "on top" */
+/* translucent layer "on top" of the backgroud color*/
 
 #layer {
     background-color: rgba(248, 247, 216, 0.2);
@@ -47,6 +53,9 @@ ol h3 {
     width: 95vw;
     height: 100vh;
 }
+
+
+/* grid layout to give a general direction to the page */
 
 #layout-container {
     display: grid;
@@ -68,6 +77,7 @@ ol h3 {
 
 #picture-tagline img {
     margin-left: 5rem;
+    height: 300px;
 }
 
 #about-me {
