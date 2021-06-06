@@ -37,14 +37,6 @@ h3 {
 }
 
 
-/* to align the h3 text a bit closer to the list */
-
-ol h3 {
-    text-align: center;
-    margin-right: 3rem;
-}
-
-
 /* translucent layer "on top" of the backgroud color*/
 
 #layer {
@@ -134,5 +126,10 @@ ol h3 {
 
 .links {
     margin-left: 2rem;
+    font-weight: bold;
+}
+
+.list-title {
+    font-size: 1.3em;
     font-weight: bold;
 }
